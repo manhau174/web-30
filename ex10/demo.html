@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1 class="my-text" id="text">Hello world</h1>
+    <script type="text/javascript">
+        //Nối chuỗi trong js + ''
+        var str = "hello every one";
+        console.log(str);
+        console.log(str + ' Hau');
+        //replace ky tu trong chuoi
+        
+        var str2 = str.replace('every', 'some');
+
+        console.log(str2);
+
+        //get className element
+        var text = document.getElementById('text');
+        console.log(text.className);
+        text.className = 'this-text';
+    </script>
+</body>
+</html>
