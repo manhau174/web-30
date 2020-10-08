@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tab {
+    list-style: none;
+}
+
+.tab li {
+    display: inline-block;
+    width: 100px;
+}
+
+.tab-content {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: none;
+    color: white;
+    margin-top: 5px;
+}
+
+.active {
+    display: block !important;
+    background: #8e1010;
+}
+
+.menu-tab {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 200%;
+    text-align: center;
+    text-decoration: none;
+    background: gray;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    cursor: pointer;
+}
+.menu-tab:hover {
+    background: #8e1010;
+}
+
+.menu-active {
+    background: #8e1010;
+
+}

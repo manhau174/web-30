@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <title>Example</title>
     <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        .cha li:hover .sub-item {
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    <div class="box">
-        <div class="header"><b>Movies</b></div>
-        <div class="image-box">
-        <img src="images/movie.jpg" alt="Movie" id="images">
-        </div>
-        <div class="footer">
-            Lorem ipsum dolor sit amet.
-        </div>
-    </div>
+    <ul class="cha">
+        <li> item 1
+        </li>
+        <li> item 2
+            <ul class="con">
+                <li class="sub-item">item2</li>
+            </ul>
+        </li>
+    </ul>
 </body>
 </html>

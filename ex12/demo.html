@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        .layout {
+            width: 80%;
+            background: rgba(0,0,0,0.5);
+            position: absolute;
+            left: 10%;
+            padding: 20px 0;
+            display: none;
+        }
+        .layout img {
+            width: 80%;
+            margin-left: 100px;
+        }
+        .images {
+            width: 200px;
+        }
+    </style>
+</head>
+<!-- Latest compiled and minified CSS & JS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+<body>
+    <div class="layout">
+        <img src="" alt="" id="image-layout">
+    </div>
+    <img src="images/background/background.jpeg" alt="" class="images">
+</body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.images').on('click', function() {
+            var src = $(this).attr('src');
+            console.log(src);
+            $('#image-layout').attr('src', src);
+            $('.layout').show();
+        })
+    })
+</script>
+</html>

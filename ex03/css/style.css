@@ -1,0 +1,85 @@
+* {
+            /*font-size: 16px;*/
+            padding: 0;
+            margin: 0;
+        }
+
+        pre {
+            color: blue;
+        }
+        p{
+
+        }
+        span {
+
+        }
+        
+        div {
+            /*width: 400px;*/
+            /*height: 200px;*/
+            /*background-color: pink;*/
+        }
+        /*.my-text {
+            color: red !important;
+        } 
+        #my-text-1 {
+            color: green;
+        }
+        .city-1 {
+            color: red;
+        }
+        .city-2 {
+            color: blue;
+        }
+        #hai-duong {
+            color: green;
+        }
+        #my-div ~ p {
+            color: red;
+        }
+        #my-div > p {
+
+        }
+        p, div, span {
+            color: red;
+        }*/
+        #my-div {
+            /*background-color: transparent;*/
+            /*background-image: url('../images/heart.png');*/
+            background-repeat: repeat-x;
+            /*height: 10000px;*/
+            background-attachment: fixed;
+            font-family: Arial;
+            font-style: italic;
+            font-weight: 600;
+            /*font-size: 4em;*/
+        }
+        #my-name {
+            font-size: 30px;
+            /*text-indent: 20px;*/
+            text-align: center;
+        }
+        #my-name:hover {
+            color: yellow;
+            font-size: 50px;
+        }
+        #my-name:link{
+
+        }
+        #my-name:visit{
+            
+        }
+
+        #text-underline {
+            text-decoration: underline;
+        }
+        #text-through {
+            text-decoration: line-through;
+        }
+        #text-overline {
+            text-decoration: overline;
+        }
+        ul>li {
+            display: inline-block;
+        }
+

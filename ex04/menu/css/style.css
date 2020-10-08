@@ -8,7 +8,7 @@ ul {
 }
 .menu {
     width: 415px;
-    padding: 5px 0px;
+    /*padding: 5px 0px;*/
     
 }
 
@@ -21,14 +21,14 @@ ul>li.item {
     text-align: center;
     border-right: 1px gray solid;
 }
-ul>li:last-child {
+.menu >li:last-child {
   border-width: 0;  
 }
 
 .sub-menu {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 32px;
 }
 
 .sub-menu>.sub-item {
@@ -36,6 +36,29 @@ ul>li:last-child {
 }
 
 .item:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu>li {
+    border-bottom: 1px gray solid;
+    border-left: 1px gray solid;
+    border-right: 1px gray solid;
+    position: relative;
+}
+
+.sub-sub-menu {
+    position: absolute;
+    left: 100px;
+    width: 100px;
+    top: 0;
+    display: none;
+}
+
+.sub-sub-menu > li {
+    border-bottom: 1px gray solid;
+}
+
+.sub-item:hover .sub-sub-menu{
     display: block;
 }
 

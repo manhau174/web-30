@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+</head>
+<body>
+    <form method="get" accept-charset="utf-8" id="formDemo">
+        <fieldset>
+            <legend>ZentGroup</legend><br>
+            <div>
+                <label>Họ<span class="red">(*)</span>:</label><br>
+                <input name="ho" type="text" placeholder="Vui lòng nhập họ">
+            </div>
+            <div>
+                <label>Tên<span class="red">(*)</span>:</label><br>
+                <input name="ten" type="text" placeholder="Vui lòng nhập tên">
+            </div>
+            <div>
+                <label>Địa chỉ<span class="red">(*)</span>:</label><br>
+                <input name="diachi" type="text" placeholder="Vui lòng nhập địa chỉ"    >
+            </div>
+            <button type="submit">Gửi</button>
+        </fieldset>
+    </form>
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+ 
+        //Khi bàn phím được nhấn và thả ra thì sẽ chạy phương thức này
+        $("#formDemo").validate({
+            rules: {
+                ho: {
+                    required: true,
+                    minlength: 6
+                },
+                ten: {
+                    email: true
+                },
+                diachi: {
+                    required: true,
+                    minlength: 2
+                }
+            },
+            messages: {
+                ho: {
+                    required: "vui lòng nhập họ",
+                    minlength: "Vui lòng nhập lớn hơn 6 ký tự"
+                },
+                ten: {
+                    email: "Không đúng định dang"
+                },
+                diachi: {
+                    required: "Vui lòng nhập địa chỉ",
+                    minlength: "Địa chỉ quá ngắn"
+                }
+            }
+        });
+
+    
+    });
+</script>
+</html>

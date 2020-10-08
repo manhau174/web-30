@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buoi 12</title>
+    <style type="text/css">
+        .myDiv {
+            width: 300px;
+            height: 200px;
+            background: red;
+        }
+
+        .myDiv2 {
+            width: 300px;
+            height: 200px;
+            background: green;
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="css/animate.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <p id="myText" class="myText">Hello World</p>
+            <p id="myText-2" class="myText">Hello World 2</p>
+            <a href="">Google</a>
+            <p>Web front end 30</p>
+        </div>
+
+        <div class="myDiv wow bounceInDown" data-wow-duration="2s" data-wow-delay="5s">
+            
+        </div>
+
+        <div class="myDiv2">
+            
+        </div>
+        
+        <div class="wow bounceInUp data-wow-duration='2s'">
+           Content to Reveal Here
+        </div>
+
+        <button id="btn-click">Click me!!!</button>
+    </div>
+</body>
+</html>

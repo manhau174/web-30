@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experience Bar</title>
+    <style type="text/css">
+        .experience-bar {
+            width: 400px;
+            height: 10px;
+            border-radius: 50px;
+            background: #c3c3c3;
+        }
+        .experience-peice {
+            width: 90%;
+            border-radius: inherit;
+            background: #4b4bf8;
+            height: 100%;
+            animation: load;
+            animation-duration: 0.5s;
+            animation-timing-function: linear;
+        }
+
+        @keyframes load {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>90%</p>
+    <div class="experience-bar">
+        <div class="experience-peice"></div>
+    </div>
+</body>
+</html>
